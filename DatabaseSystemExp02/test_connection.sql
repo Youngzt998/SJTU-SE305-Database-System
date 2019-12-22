@@ -1,0 +1,10 @@
+drop database testdb;
+create database testdb;
+use testdb;
+create table test(id int, name varchar(32), score int);
+insert into test (id, name, score) values (1, "Xiwei Wu", 100);
+insert into test (id, name, score) values (2, "Yibo Dong", 99);
+insert into test (id, name, score) values (3, "Ziteng Yang", 59);
+select * from test;
+-- select * from (select (id, name) from test);
+describe test;
